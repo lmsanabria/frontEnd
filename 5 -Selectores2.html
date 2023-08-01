@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Selector combinador Descendiente!*/
+        div p {
+            color: lime;
+        }
+
+        /*Selector Hijo Directo*/
+        div>div {
+            background: red;
+        }
+
+        /*selector elemento adyacente*/
+        article + div {
+            background: orange;
+        }
+        
+        div ~ p {
+            color: brown;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Platzi</p>
+        <div>primero div</div>
+        <div>Segundo div</div>
+    </div>
+    <p>Este es un p hermano de un div</p>
+    <p>Este es otro p hermano de un div</p>
+
+    <article>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestiae expedita architecto amet, natus ut
+            error non illum pariatur totam qui delectus alias nihil modi vitae, facere, ipsam nemo nobis.</p>
+    </article>
+    <div>Esto es un div depués de un article</div>
+
+</body>
+
+</html>
