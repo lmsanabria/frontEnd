@@ -1,0 +1,21 @@
+
+git config -l
+
+git config --global user.email "cooreo@correo.com"
+git config --global user.name "name"
+
+ssh-keygen -t rsa -b 4096 -C "correo@correo.com"
+
+eval $(ssh-agent -s)
+
+ssh-add ~/.ssh/id_rsa
+
+git remote add origin git@github.comETC...
+
+git remote -v
+
+git pull origin main
+
+git pull origin main --allow-unrelated-histories 
+
+git push origin main 
