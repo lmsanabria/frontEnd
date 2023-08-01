@@ -1,3 +1,5 @@
+/*Cambiar de rama en git*/
+git branch -m main
 
 git config -l
 
