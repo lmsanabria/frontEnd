@@ -9,13 +9,19 @@
         .container {
             display: flex;
             background: papayawhip;
-            justify-content: space-between;
+            justify-content: center; /*Centra elementos en eje x*/
+            align-items: center;    /*Centra los elementos en eje y*/
             height: 500px;
+            flex-direction: column; /*Ordena los elementos en columna*/
         }
         .item {
             width: 30px;
             height: 30px;
             background: purple;
+        }
+
+        .container .item:nth-child(2n + 1) {
+            background: cyan;
         }
     </style>
 </head>
